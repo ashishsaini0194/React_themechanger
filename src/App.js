@@ -24,7 +24,7 @@ function App() {
     if (current_theme == "light") {
       document.body.style.backgroundColor = "white"
     } else {
-      document.body.style.backgroundColor = "black"
+      document.body.style.backgroundColor = "red"
     }
   }, [current_theme])
 
