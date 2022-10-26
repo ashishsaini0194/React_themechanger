@@ -9,7 +9,7 @@ function App() {
   var prevtheme = useRef("dark");
 
   var switching = () => {
-    if (current_theme == "dark") {
+    if (current_theme === "dark") {
       prevtheme.current = "dark"
       dispatch(lighttheme())
     } else {
@@ -21,7 +21,7 @@ function App() {
   useEffect(() => { // component will mount + component did update
     console.log(1);
 
-    if (current_theme == "light") {
+    if (current_theme === "light") {
       document.body.style.backgroundColor = "white"
     } else {
       document.body.style.backgroundColor = "pink"
